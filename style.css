@@ -1,0 +1,131 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));}
+.wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+    background: linear-gradient(135deg, #E8BD77, #2F06E4);
+}
+.container{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+}
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 3px;
+    padding: 4px 12px;
+}
+
+#search input{
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+#search button{
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#weather{
+    display: none;
+    gap: 10px;
+}
+#weather.show{
+display: block;
+}
+#weather #title{
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#temp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-weight:lighter ;
+}
+#temp #temp_value{
+    font-size: 50px;
+    font-weight: bold;
+}
+.temp_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    transform: translate(0, -70px);
+}
+#other_infos{
+   margin-top: 1px;
+   display: grid;
+   text-align: center;
+   transform: translate(0, -30px);
+   grid-template-columns: 1fr 1fr;
+   gap: 12px;
+
+}
+other_infos .info{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 4px 10px;
+
+}
+
+#alert{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#limpo{
+background: radial-gradient(at left top, #ff6701, #D9CEA3);
+}
+#algumasnuvens{
+background: linear-gradient(135deg, #E8BD77, #3f220762);
+}
+#nuvensdispersas{
+background: linear-gradient(315deg, #A0D6F1, #7C7C7C);
+}
+#nuvens{
+background: radial-gradient(at center, #818181, #002291);
+}
+
+#nublado{
+background: radial-gradient(at center, #090909, #656565);
+}
+#tempestade{
+    background: radial-gradient(at center, #3b3b3b, #011a6e);
+}
+#chuva-leve{
+background: linear-gradient(315deg, #4540FD, #ABABAB);
+}
+#neve{
+    background: radial-gradient(at center, #39FFFE, #8A8A8A);
+}
+#nevoa{
+background: radial-gradient(at right bottom, #CDCDCD, #8A8A8A);
+}

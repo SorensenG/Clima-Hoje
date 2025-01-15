@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/wJrKRerWC697Nq8NCZ3nQ7QzbdcPBfFgAlPyj2j7w_FM-fkSXNQsHJRy53QkURccGUk" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Clima agora</title>
+</head>
+
+<body>
+    <div class="wrapper"> 
+        <div class="container" >
+
+            <form id="search">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="search" name="city-name" id="city-name" placeholder="Buscar cidade">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <div id="weather">
+                <h1 id="title">Limercity/SP</h1>
+
+                <div id="info">
+                    <div id="temp">
+                        <img id="temp_img" src="/nuvem-ensolarada.png" alt="">
+                        <div class="temp_info">
+                            <p id="temp_value">
+                                32<sup>°C</sup>
+                            </p>
+                            <p id="temp_description">
+                                Ensolarado
+                            </p>
+                        </div>
+                    
+                    </div>
+                    
+                    <div id="other_infos">
+
+                        <div class="info">
+                            
+                            <i id="max_temp_ico" class="fa-solid fa-temperature-high"></i>
+                            <div>
+                                <h2>Temp. max</h2>
+                                <p id="max_temp">
+                                    32<sup>°C</sup>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="info">
+                            <i class="fa-solid fa-temperature-low"></i>
+
+                            <div>
+                                <h2>Temp. min</h2>
+                                <p id="min_temp">
+                                    28<sup>°C</sup>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="info">
+                            <i class="fa-solid fa-droplet"></i>
+
+                            <div>
+                                <h2>Humidade</h2>
+                                <p id="humidity">
+                                    50%
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="info">
+                            <i class="fa-solid fa-wind"></i>
+
+                            <div>
+                                <h2>Vento</h2>
+                                <p id="wind">
+                                    10km/h
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
+            <div id="alert">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
